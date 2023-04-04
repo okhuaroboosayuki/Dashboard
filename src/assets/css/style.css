@@ -1,6 +1,8 @@
 :root{
     --pry-font-fam: 'Poppins', sans-serif;
     --header-font-fam: 'Nunito Sans', sans-serif;
+    --nav-bar-color: rgb(0,131,37);
+    --side-bar-color: rgb(255,255,255);
 }
 
 *{
@@ -8,4 +10,8 @@
     margin: 0;
     padding: 0;
     font-family: var(--pry-font-fam);
+}
+
+li{
+    list-style: none;
 }
