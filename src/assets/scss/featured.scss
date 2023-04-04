@@ -1,0 +1,18 @@
+.featured{
+    flex: 4;
+    box-shadow: 2px 2px 4px lightgray, -1px -1px 3px lightgray;
+    -webkit-box-shadow: 2px 2px 4px lightgray, -1px -1px 3px lightgray;
+    padding: 10px;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: gray;
+
+        .title{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
