@@ -1,0 +1,29 @@
+.side_bar{
+    flex: 1;
+    border-right: 1px solid rgb(230, 227, 227);
+    min-height: 100vh;
+    background-color: var(--side-bar-color);
+
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #6439ff;
+            font-family: var(--header-font-fam);
+        }
+    }
+
+    hr{
+        height: 0;
+        border: 1px solid rgb(230, 227, 227);
+    }
+
+    .center{
+        padding-left: 10px;
+    }
+}
