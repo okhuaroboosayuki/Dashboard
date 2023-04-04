@@ -1,7 +1,17 @@
-.home{
+.home {
     display: flex;
 
-    .home_container{
+    .home_container {
         flex: 6;
+
+        .widgets, .chart_container {
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .chart_container{
+            padding: 5px 20px;
+        }
     }
 }
