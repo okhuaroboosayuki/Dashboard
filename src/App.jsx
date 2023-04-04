@@ -1,9 +1,11 @@
+import { Outlet } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
-      <p>React App</p>
+      <Home />
+      <Outlet />
     </div>
   );
 }
