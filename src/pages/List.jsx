@@ -1,5 +1,5 @@
 import "../assets/scss/list.scss";
-import Sidebar from "../components/Sidebar";
+import SideBar from "../components/SideBar"
 import NavBar from "../components/NavBar";
 import DataTable from "../components/DataTable";
 
