@@ -1,5 +1,5 @@
-import SideBar from "../components/SideBar";
 import "../assets/scss/home.scss";
+import SideBar from "../components/SideBar";
 import NavBar from "../components/NavBar";
 import Widget from "../components/Widget";
 import Featured from "../components/Featured";
