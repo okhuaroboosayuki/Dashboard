@@ -6,7 +6,7 @@ import DataTable from "../components/DataTable";
 function List() {
   return (
     <div className="list">
-      <Sidebar />
+      <SideBar />
       <div className="list_container">
         <NavBar />
         <DataTable />
