@@ -1,28 +1,45 @@
 import "../assets/scss/datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import Box from '@mui/material/Box'
-import { userColumns, userRows } from "../data"
+import Box from "@mui/material/Box";
+import { userColumns, userRows } from "../data";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function DataTable() {
-    const actionColumn = [
-        {
-            field: "action",
-            headerName: "Action",
-            width: 200,
-            renderCell: () => {
-                return(
-                    <div className="cell_action">
-                        <div className="view_btn">View</div>
-                        <div className="delete_btn">Delete</div>
-                    </div>
-                )
-            }
-        }
-    ]
+  const [data, setData] = useState(userRows);
+
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
+
+  const actionColumn = [
+    {
+      field: "action",
+      headerName: "Action",
+      width: 200,
+      renderCell: (params) => {
+        return (
+          <div className="cell_action">
+            <Link to="/users/test" >
+              <div className="view_btn">View</div>
+            </Link>
+            <div className="delete_btn" onClick={() => handleDelete(params.row.id)}>Delete</div>
+          </div>
+        );
+      },
+    },
+  ];
   return (
-    <Box className="data_table" >
+    <Box className="data_table">
+      <div className="data_table_title">
+        Add New User
+        <Link to="/users/new" className="link" >
+          Add New
+        </Link>
+      </div>
       <DataGrid
-        rows={userRows}
+      className="data_grid"
+        rows={data}
         columns={userColumns.concat(actionColumn)}
         initialState={{
           pagination: {
