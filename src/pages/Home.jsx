@@ -15,18 +15,18 @@ function Home() {
 
         <div className="widgets">
           <Widget type="users" />
-          <Widget type="orders" />
-          <Widget type="earnings" />
-          <Widget type="balance" />
+          <Widget type="units" />
+          <Widget type="wards" />
+          <Widget type="teams" />
         </div>
 
         <div className="chart_container">
           <Featured />
-          <Chart aspect={2 / 1} title="Last 6 months revenue" />
+          <Chart aspect={2 / 1} title="Last 6 months" />
         </div>
 
         <div className="list_container">
-          <h1 className="list_title">Latest Transactions</h1>
+          <h1 className="list_title">Latest Registrations</h1>
           <List />
         </div>
       </div>
