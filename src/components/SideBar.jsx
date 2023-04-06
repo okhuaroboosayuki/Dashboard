@@ -11,12 +11,32 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { Link, NavLink, useMatch, useResolvedPath } from "react-router-dom";
+import { DarkModeContext } from "../context/darkModeContext";
+import { useContext } from "react";
 
 function SideBar() {
+  function NavBarLink({ to, children, className, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname });
+
+    return (
+      <li className={isActive ? "active" : ""}>
+        <NavLink to={to} className={className} {...props}>
+          {children}
+        </NavLink>
+      </li>
+    );
+  }
+
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
     <section className="side_bar">
       <div className="top">
-        <span className="logo">Admin</span>
+        <Link to="/">
+          <span className="logo">Admin</span>
+        </Link>
       </div>
 
       <hr />
@@ -24,20 +44,22 @@ function SideBar() {
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <li>
+          <NavBarLink to="/">
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
-          </li>
+          </NavBarLink>
 
           <p className="title">LISTS</p>
-          <li>
+          <NavBarLink to="/users">
             <PersonIcon className="icon" />
             <span>Users</span>
-          </li>
-          <li>
+          </NavBarLink>
+
+          <NavBarLink to="/products">
             <StoreIcon className="icon" />
             <span>Products</span>
-          </li>
+          </NavBarLink>
+
           <li>
             <CreditCardIcon className="icon" />
             <span>Orders</span>
@@ -84,10 +106,16 @@ function SideBar() {
       </div>
 
       <hr />
-      
+
       <div className="bottom">
-        <div className="color_option"></div>
-        <div className="color_option"></div>
+        <div
+          className="color_option"
+          onClick={() => dispatch({ type: "LIGHT_MODE" })}
+        ></div>
+        <div
+          className="color_option"
+          onClick={() => dispatch({ type: "DARK_MODE" })}
+        ></div>
       </div>
     </section>
   );
