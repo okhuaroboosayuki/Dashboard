@@ -9,7 +9,7 @@ function Featured() {
   return (
     <div className="featured">
       <div className="top">
-        <h1 className="title">Total Revenue</h1>
+        <h1 className="title">Total Users</h1>
         <MoreVertIcon fontSize="small" />
       </div>
 
@@ -18,18 +18,15 @@ function Featured() {
           <CircularProgressbar value={80} text={"80%"} strokeWidth={4} />
         </div>
 
-        <p className="title">Total sales made today</p>
-        <p className="amount">$500</p>
-        <p className="desc">
-          Previous transactions processing. Last payments may not be included.
-        </p>
+        <p className="title">Total users added today</p>
+        <p className="amount">1000</p>
 
         <div className="summary">
           <div className="item">
             <div className="item_title">Target</div>
             <div className="item_result positive">
               <ArrowDropUpIcon />
-              <div className="result_amount">$15.3k</div>
+              <div className="result_amount">15k</div>
             </div>
           </div>
 
@@ -37,7 +34,7 @@ function Featured() {
             <div className="item_title">Last Week</div>
             <div className="item_result negative">
               <ArrowDropDownIcon />
-              <div className="result_amount">$10.8k</div>
+              <div className="result_amount">800</div>
             </div>
           </div>
 
@@ -45,7 +42,7 @@ function Featured() {
             <div className="item_title">Last Month</div>
             <div className="item_result positive">
               <ArrowDropUpIcon />
-              <div className="result_amount">$12.3k</div>
+              <div className="result_amount">12.3k</div>
             </div>
           </div>
         </div>
