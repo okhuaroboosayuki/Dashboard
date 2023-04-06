@@ -1,78 +1,78 @@
 import "../assets/scss/widget.scss";
-import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
-import PersonIcon from "@mui/icons-material/Person";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
-import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
-import { green, red } from "@mui/material/colors";
+import GroupsIcon from "@mui/icons-material/Groups";
+import GroupIcon from '@mui/icons-material/Group';
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import OtherHousesIcon from "@mui/icons-material/OtherHouses";
+import {Link} from "react-router-dom";
 
 function Widget({ type }) {
   let data;
 
-  //   temporary data
-  const amount = 700;
-  const diff = 90;
 
   switch (type) {
     case "users":
       data = {
-        title: "Users",
-        isMoney: false,
-        link: "See all users",
+        title: "Total Registered Users",
+        link: "See all registered users",
+        number: 6300,
+        path: `/users`,
         icon: (
-          <PersonIcon
+          <GroupIcon
             className="icon"
             style={{
-              color: "crimson",
-              backgroundColor: "rgba(255, 0, 0, 0.2)",
+              color: "#6439ff",
+              backgroundColor: "rgb(230, 227, 227, 0.2)",
             }}
           />
         ),
       };
       break;
-    case "orders":
+    case "units":
       data = {
-        title: "Orders",
-        isMoney: false,
-        link: "View all orders",
+        title: "Total Units",
+        link: "View all units",
+        number: 50,
+        // path: `/`,
         icon: (
-          <ShoppingCartOutlinedIcon
+          <ApartmentIcon
             className="icon"
             style={{
-              color: "goldenrod",
-              backgroundColor: "rgba(218, 165, 32, 0.2)",
+              color: "#6439ff",
+              backgroundColor: "rgba(230, 227, 227, 0.2)",
             }}
           />
         ),
       };
       break;
-    case "earnings":
+    case "wards":
       data = {
-        title: "Earnings",
-        isMoney: true,
-        link: "View net earnings",
+        title: "Wards",
+        link: "View all wards",
+        number: 20,
+        // path: `/`,
         icon: (
-          <MonetizationOnOutlinedIcon
+          <OtherHousesIcon
             className="icon"
             style={{
-              color: "green",
-              backgroundColor: "rgba(0, 128, 0, 0.2)",
+              color: "#6439ff",
+              backgroundColor: "rgba(230, 227, 227, 0.2)",
             }}
           />
         ),
       };
       break;
-    case "balance":
+    case "teams":
       data = {
-        title: "Balance",
-        isMoney: true,
-        link: "See details",
+        title: "Active Teams",
+        link: "See active teams",
+        number: 15,
+        // path: `/`,
         icon: (
-          <AccountBalanceWalletOutlinedIcon
+          <GroupsIcon
             className="icon"
             style={{
-              color: "purple",
-              backgroundColor: "rgba(128, 0, 128, 0.2)",
+              color: "#6439ff",
+              backgroundColor: "rgb(230, 227, 227, 0.2)",
             }}
           />
         ),
@@ -86,17 +86,12 @@ function Widget({ type }) {
     <div className="widget">
       <div className="left">
         <span className="title">{data.title}</span>
-        <span className="counter">
-          {data.isMoney && "$"} {amount}
-        </span>
-        <span className="link">{data.link}</span>
+        <span className="counter"> {data.number}</span>
+        <Link to={data.path} className="link">{data.link}</Link>
       </div>
 
       <div className="right">
-        <div className="percentage positive">
-          <ArrowDropUpIcon />
-          {diff} %
-        </div>
+        <div className="percentage"></div>
 
         {data.icon}
       </div>
