@@ -66,31 +66,31 @@ function List() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell className="tableCell">Tracking ID</TableCell>
-            <TableCell className="tableCell">Product</TableCell>
-            <TableCell className="tableCell">Customer</TableCell>
-            <TableCell className="tableCell">Date</TableCell>
-            <TableCell className="tableCell">Amount</TableCell>
-            <TableCell className="tableCell">Payment Method</TableCell>
-            <TableCell className="tableCell">Status</TableCell>
+            <TableCell className="table_cell">Tracking ID</TableCell>
+            <TableCell className="table_cell">Product</TableCell>
+            <TableCell className="table_cell">Customer</TableCell>
+            <TableCell className="table_cell">Date</TableCell>
+            <TableCell className="table_cell">Amount</TableCell>
+            <TableCell className="table_cell">Payment Method</TableCell>
+            <TableCell className="table_cell">Status</TableCell>
           </TableRow>
         </TableHead>
 
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell key={row.id} className="tableCell">{row.id}</TableCell>
-              <TableCell key={row.product} className="tableCell">
+              <TableCell key={row.id} className="table_cell">{row.id}</TableCell>
+              <TableCell key={row.product} className="table_cell">
                 <div className="cell_wrapper">
                     <img src={row.img} alt="" className="image" />
                     {row.product}
                 </div>
               </TableCell>
-              <TableCell key={row.customer} className="tableCell">{row.customer}</TableCell>
-              <TableCell key={row.date} className="tableCell">{row.date}</TableCell>
-              <TableCell key={row.amount} className="tableCell">{row.amount}</TableCell>
-              <TableCell key={row.method} className="tableCell">{row.method}</TableCell>
-              <TableCell key={row.status} className="tableCell">
+              <TableCell key={row.customer} className="table_cell">{row.customer}</TableCell>
+              <TableCell key={row.date} className="table_cell">{row.date}</TableCell>
+              <TableCell key={row.amount} className="table_cell">{row.amount}</TableCell>
+              <TableCell key={row.method} className="table_cell">{row.method}</TableCell>
+              <TableCell key={row.status} className="table_cell">
                 <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell>
             </TableRow>
