@@ -45,6 +45,11 @@
                 background-color: #ece8ff;
             }
 
+            a{
+                display: flex;
+                align-items: center;
+            }
+
             .icon{
                 font-size: 1.125rem;
                 margin-right: 10px;
@@ -55,6 +60,14 @@
                 font-size: .875rem;
                 font-weight: 600;
                 color: #888;
+            }
+        }
+
+        .active{
+            background-color: #e1dafc;
+
+            &:hover{
+                background-color: #e1dafc;
             }
         }
     }

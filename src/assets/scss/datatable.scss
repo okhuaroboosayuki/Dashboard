@@ -3,6 +3,26 @@
     width: 100%;
     padding: 20px;
 
+    .data_table_title{
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link{
+            color: green;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 5px;
+            border: 1px solid green;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
     .cell_with_image{
         display: flex;
         align-items: center;
@@ -21,12 +41,12 @@
         border-radius: 5px;
 
         &.active{
-            background-color: #e6ffe6;
+            background-color: #77ee77c7;
             color: green;
         }
         &.pending{
-            background-color: #ffffe6;
-            color: #ff9900;
+            background-color: #f8f8b9d2;
+            color: #9c5e00;
         }
         &.passive{
             background-color: #ffe6e6;
