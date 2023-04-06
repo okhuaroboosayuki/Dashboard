@@ -20,10 +20,6 @@ function NavBar() {
 
         <div className="items">
           <div className="item">
-            {/* <DarkModeIcon
-              className="icon"
-              onClick={() => dispatch({ type: "TOGGLE_MODE" })}
-            /> */}
             {darkMode ? (
               <LightModeIcon
                 className="icon"
