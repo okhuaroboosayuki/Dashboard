@@ -1,9 +1,9 @@
 import "../assets/scss/sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import PersonIcon from "@mui/icons-material/Person";
-import StoreIcon from "@mui/icons-material/Store";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import GroupsIcon from "@mui/icons-material/Groups";
+import GroupIcon from '@mui/icons-material/Group';
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import OtherHousesIcon from "@mui/icons-material/OtherHouses";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import MedicalInformationIcon from "@mui/icons-material/MedicalInformation";
@@ -51,22 +51,22 @@ function SideBar() {
 
           <p className="title">LISTS</p>
           <NavBarLink to="/users">
-            <PersonIcon className="icon" />
+            <GroupIcon className="icon" />
             <span>Users</span>
           </NavBarLink>
 
           <NavBarLink to="/products">
-            <StoreIcon className="icon" />
-            <span>Products</span>
+            <ApartmentIcon className="icon" />
+            <span>Units</span>
           </NavBarLink>
 
           <li>
-            <CreditCardIcon className="icon" />
-            <span>Orders</span>
+            <OtherHousesIcon className="icon" />
+            <span>Wards</span>
           </li>
           <li>
-            <LocalShippingIcon className="icon" />
-            <span>Delivery</span>
+            <GroupsIcon className="icon" />
+            <span>Teams</span>
           </li>
 
           <p className="title">USEFUL</p>
