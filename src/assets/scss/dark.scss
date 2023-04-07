@@ -1,77 +1,99 @@
-.app.dark{
+.app.dark {
     background-color: #111;
     color: rgb(156, 156, 156);
 
-    .chart_grid{
+    .chart_grid {
         stroke: rgba(228, 228, 228, 0.219);
     }
 
-    .table{
+    .table {
         background-color: #111;
 
-        .table_cell{
+        .table_cell {
             color: gray;
         }
     }
 
-    .nav_bar{
+    .nav_bar {
         color: #999;
         border-color: #333;
         // background-color: #111;
 
-        .search{
+        .search {
             border-color: gray;
 
-            input{
+            input {
                 color: rgb(155, 155, 155);
             }
         }
     }
 
-    .side_bar{
+    .side_bar {
         background-color: #111;
         border-color: #333;
 
-        .top{
-            .logo{
+        .top {
+            .logo {
                 color: #999;
             }
         }
 
-        hr{
+        hr {
             border-color: #333;
         }
 
-        ul{
-            li{
-                &:hover{
+        ul {
+            li {
+                &:hover {
                     background-color: #333;
                 }
 
-                .icon{
+                .icon {
                     color: #999;
                 }
             }
 
-            .active{
+            .active {
                 background-color: #333;
             }
         }
     }
 
-    .data_table{
-        .data_grid{
+    .widget {
+        .link {
+            color: gray;
+        }
+    }
+
+    .data_table {
+        .data_grid {
             color: gray;
             border: none;
 
-            .view_btn, .delete_btn{
+            .view_btn,
+            .delete_btn {
                 color: #999;
                 border: none;
             }
         }
     }
 
-    input{
+    input {
         background-color: transparent;
+    }
+
+    .featured {
+        .bottom {
+            .summary {
+                .item {
+                    .item_result {
+                        &.neutral {
+                            font-weight: 500;
+                            color: ivory;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
