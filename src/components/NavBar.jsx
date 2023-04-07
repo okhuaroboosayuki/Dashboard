@@ -42,7 +42,7 @@ function NavBar() {
           </div>
           <div className="item">
             <img
-              src="https://res.cloudinary.com/dg0sck16v/image/upload/v1680613170/Avatar/charlesdeluvio-K4mSJ7kc0As-unsplash_lbldzv.jpg"
+              src="https://res.cloudinary.com/dg0sck16v/image/upload/v1680902133/Avatar/jurica-koletic-7YVZYZeITc8-unsplash_oyzrlo.jpg"
               alt="avatar"
               className="avatar"
             />
