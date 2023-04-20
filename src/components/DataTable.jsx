@@ -5,7 +5,7 @@ import { userColumns, userRows } from "../data";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function DataTable() {
+function DataTable(props) {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
@@ -20,7 +20,7 @@ function DataTable() {
       renderCell: (params) => {
         return (
           <div className="cell_action">
-            <Link to="/users/test" >
+            <Link to="/users/user" >
               <div className="view_btn">View</div>
             </Link>
             <div className="delete_btn" onClick={() => handleDelete(params.row.id)}>Delete</div>
@@ -32,7 +32,7 @@ function DataTable() {
   return (
     <Box className="data_table">
       <div className="data_table_title">
-        Add New User
+        {props.title}
         <Link to="/users/new" className="link" >
           Add New
         </Link>
