@@ -36,23 +36,23 @@
         }
     }
 
-    .cell_with_status{
-        padding: 5px;
-        border-radius: 5px;
+    // .cell_with_status{
+    //     padding: 5px;
+    //     border-radius: 5px;
 
-        &.active{
-            background-color: #77ee77c7;
-            color: green;
-        }
-        &.pending{
-            background-color: #f8f8b9d2;
-            color: #9c5e00;
-        }
-        &.passive{
-            background-color: #ffe6e6;
-            color: red;
-        }
-    }
+    //     &.active{
+    //         background-color: #77ee77c7;
+    //         color: green;
+    //     }
+    //     &.pending{
+    //         background-color: #f8f8b9d2;
+    //         color: #9c5e00;
+    //     }
+    //     &.passive{
+    //         background-color: #ffe6e6;
+    //         color: red;
+    //     }
+    // }
 
     .cell_action{
         display: flex;
