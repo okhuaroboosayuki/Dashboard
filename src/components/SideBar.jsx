@@ -55,7 +55,7 @@ function SideBar() {
             <span>Users</span>
           </NavBarLink>
 
-          <NavBarLink to="/products">
+          <NavBarLink to="/units">
             <ApartmentIcon className="icon" />
             <span>Units</span>
           </NavBarLink>
