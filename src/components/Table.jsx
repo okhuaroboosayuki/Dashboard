@@ -11,48 +11,43 @@ function List() {
   const rows = [
     {
       id: 1143155,
-      img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
-      user: "John Smith",
+      img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923544/Avatar/ayo-ogunseinde-sibVwORYqs0-unsplash_zarq04.jpg",
+      user: "John Akpomera",
       unit: 12,
       ward: 1,
       date: new Date().toLocaleDateString(),
-      status: "Approved",
     },
     {
       id: 2235235,
-      img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
-      user: "Michael Doe",
+      img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923532/Avatar/luis-villasmil-hh3ViD0r0Rc-unsplash_vxmjqh.jpg",
+      user: "Ndubiusi Offor",
       unit: 10,
       ward: 3,
       date: new Date().toLocaleDateString(),
-      status: "Pending",
     },
     {
       id: 2342353,
-      img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
-      user: "John Smith",
+      img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923553/Avatar/joseph-gonzalez-iFgRcqHznqg-unsplash_urvnxz.jpg",
+      user: "John Iyamu",
       unit: 2,
       ward: 2,
       date: new Date().toLocaleDateString(),
-      status: "Pending",
     },
     {
       id: 2357741,
-      img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
-      user: "Jane Smith",
+      img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923762/Avatar/mustafa-omar-RGtSTDmmcCk-unsplash_qqhtqv.jpg",
+      user: "Osasu Ogunrobo",
       unit: 1,
       ward: 1,
       date: new Date().toLocaleDateString(),
-      status: "Approved",
     },
     {
       id: 2342355,
-      img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
-      user: "Harold Carol",
+      img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923569/Avatar/ben-den-engelsen-YUu9UAcOKZ4-unsplash_vocbsp.jpg",
+      user: "Harold Rhodes-Vivour",
       unit: 7,
       ward: 9,
       date: new Date().toLocaleDateString(),
-      status: "Pending",
     },
   ];
 
@@ -66,7 +61,6 @@ function List() {
             <TableCell className="table_cell">Unit</TableCell>
             <TableCell className="table_cell">Ward</TableCell>
             <TableCell className="table_cell">Date of Registration</TableCell>
-            <TableCell className="table_cell">Status</TableCell>
           </TableRow>
         </TableHead>
 
@@ -79,7 +73,7 @@ function List() {
               <TableCell key={row.user} className="table_cell">
                 <div className="cell_wrapper">
                   <img src={row.img} alt="" className="image" />
-                  {row.user}
+                  <span>{row.user}</span>
                 </div>
               </TableCell>
               <TableCell key={row.unit} className="table_cell">
@@ -90,9 +84,6 @@ function List() {
               </TableCell>
               <TableCell key={row.date} className="table_cell">
                 {row.date}
-              </TableCell>
-              <TableCell key={row.status} className="table_cell">
-                <span className={`status ${row.status}`}>{row.status}</span>
               </TableCell>
             </TableRow>
           ))}
