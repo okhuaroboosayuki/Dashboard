@@ -24,99 +24,105 @@ export const userColumns = [
         headerName: "Age",
         width: 100,
     },
+    // {
+    //     field: "status",
+    //     headerName: "Status",
+    //     width: 160,
+    //     renderCell: (params) => {
+    //         return (
+    //             <div className={`cell_with_status ${params.row.status}`}>
+    //                 {params.row.status}
+    //             </div>
+    //         );
+    //     },
+    // },
     {
-        field: "status",
-        headerName: "Status",
+        field: "gender",
+        headerName: "Gender",
         width: 160,
-        renderCell: (params) => {
-            return (
-                <div className={`cell_with_status ${params.row.status}`}>
-                    {params.row.status}
-                </div>
-            );
-        },
-    },
+    }
 ];
 
 export const userRows = [
     {
         id: 1,
-        username: "Snow",
-        img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        username: "Ndubiusi Offor",
+        img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923532/Avatar/luis-villasmil-hh3ViD0r0Rc-unsplash_vxmjqh.jpg",
         status: "active",
-        email: "1snow@gmail.com",
+        email: "offor.ndu@mail.com",
         age: 35,
+        gender: "Male",
     },
     {
         id: 2,
-        username: "Jamie Lannister",
-        img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        email: "2snow@gmail.com",
-        status: "passive",
+        username: "John Akpomera",
+        img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923544/Avatar/ayo-ogunseinde-sibVwORYqs0-unsplash_zarq04.jpg",
+        email: "John.Akpomera@mail.com",
         age: 42,
+        gender: "Male",
     },
     {
         id: 3,
-        username: "Lannister",
-        img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        email: "3snow@gmail.com",
-        status: "pending",
+        username: "John Iyamu",
+        img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923553/Avatar/joseph-gonzalez-iFgRcqHznqg-unsplash_urvnxz.jpg",
+        email: "j.iyamu@mail.com",
         age: 45,
+        gender: "Male",
     },
     {
         id: 4,
-        username: "Stark",
-        img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        email: "4snow@gmail.com",
-        status: "active",
+        username: "Osasu Ogunrobo",
+        img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923762/Avatar/mustafa-omar-RGtSTDmmcCk-unsplash_qqhtqv.jpg",
+        email: "ogunrobo.osas@mail.com",
         age: 16,
+        gender: "Female",
     },
     {
         id: 5,
-        username: "Targaryen",
-        img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        email: "5snow@gmail.com",
-        status: "passive",
+        username: "Harold Rhodes-Vivour",
+        img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923569/Avatar/ben-den-engelsen-YUu9UAcOKZ4-unsplash_vocbsp.jpg",
+        email: "hrv@mail.com",
         age: 22,
+        gender: "Male",
     },
     {
         id: 6,
-        username: "Melisandre",
-        img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        email: "6snow@gmail.com",
-        status: "active",
-        age: 15,
+        username: "Melissa Osagie",
+        img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1681923527/Avatar/matheus-ferrero-W7b3eDUb_2I-unsplash_udi38k.jpg",
+        email: "mel.osas@mail.com",
+        age: 25,
+        gender: "Female",
     },
     {
         id: 7,
-        username: "Clifford",
-        img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        email: "7snow@gmail.com",
-        status: "passive",
+        username: "Paul Scholes",
+        img: "https://res.cloudinary.com/dg0sck16v/image/upload/v1680738694/Avatar/pexels-muhammadtaha-ibrahim-3778211_reb9a5.jpg",
+        email: "paul.scholes@manutd.com",
         age: 44,
+        gender: "Male",
     },
     {
         id: 8,
         username: "Frances",
         img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
         email: "8snow@gmail.com",
-        status: "active",
         age: 36,
+        gender: "Female",
     },
     {
         id: 9,
         username: "Roxie",
         img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
         email: "snow@gmail.com",
-        status: "pending",
         age: 65,
+        gender: "Female",
     },
     {
         id: 10,
-        username: "Roxie",
+        username: "Malcolm X",
         img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        email: "snow@gmail.com",
-        status: "active",
+        email: "x@mail.com",
         age: 65,
+        gender: "Male",
     },
 ];
