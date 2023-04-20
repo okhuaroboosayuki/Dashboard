@@ -13,7 +13,7 @@ function Single() {
         <div className="top">
           <div className="left">
             <div className="edit_btn">Edit</div>
-            <h1 className="title top_title">Information</h1>
+            <h1 className="title top_title">user's information</h1>
             <div className="item">
               <img
                 src="https://res.cloudinary.com/dg0sck16v/image/upload/v1680738694/Avatar/pexels-muhammadtaha-ibrahim-3778211_reb9a5.jpg"
@@ -22,7 +22,7 @@ function Single() {
               />
 
               <div className="details">
-                <h1 className="item_title">Paul Scholes</h1>
+                <h1 className="item_title">paul scholes</h1>
                 <div className="item_details">
                   <span className="item_key">Email:</span>
                   <span className="item_value">paul.scholes@manutd.com</span>
@@ -44,12 +44,12 @@ function Single() {
           </div>
 
           <div className="right">
-            <Chart aspect={3 / 1} title="User's expenditure (Last 6 months)" />
+            <Chart aspect={3 / 1} title="User's Referrals (Last 6 months)" />
           </div>
         </div>
 
         <div className="bottom">
-          <h1 className="title">Last Transactions</h1>
+          <h1 className="title">latest registration</h1>
           <List />
         </div>
       </div>
