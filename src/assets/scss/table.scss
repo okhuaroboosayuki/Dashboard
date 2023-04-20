@@ -1,28 +1,20 @@
 .table{
-    .cell_wrapper{
-        display: flex;
-        align-items: center;
-
-        .image{
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            margin-right: 10px;
-            object-fit: cover;
-        }
-    }
-
-    .status{
-        padding: 5px;
-        border-radius: 5px;
-
-        &.Approved{
-            background-color: #a2f3a2;
-            color: green;
-        }
-        &.Pending{
-            background-color: #f5f5bb;
-            color: #ff9900;
+    .table_cell{
+        .cell_wrapper{
+            display: flex;
+            align-items: center;
+    
+            .image{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                margin-right: 10px;
+                object-fit: cover;
+            }
+    
+            span{
+                margin-left: 1rem;
+            }
         }
     }
 }
